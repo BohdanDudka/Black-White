@@ -2,21 +2,23 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Black & White</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body id="Scrolling">
+<a href="#" class="scrollLink">Top</a>
     <div class="container">
         <div class="container__header">
             <header class="header">
                 <div class="header__logo">
                     <div class="logo">
-                        <a href="#" class="logo__link">black &amp; white</a>
+                        <a href="index.html" class="logo__link">black &amp; white</a>
                     </div>
                 </div>
             </header>
@@ -125,6 +127,12 @@
             </section>
         </div>
     </div>
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/component.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script>
+        var Scroll_1 = new Scroll("#Scrolling");
+    </script>
 </body>
 
 </html>
